@@ -83,8 +83,8 @@ VARP
       ,[rowguid]
       ,[ModifiedDate]
   FROM [AdventureWorks2017].[Sales].[SpecialOffer]
-  WHERE [StartDate] >= '2013-01-01' AND [StartDate] <= '2014-01-01'
-  ORDER BY [DiscountPct];
+ WHERE [StartDate] >= '2013-01-01' AND [StartDate] <= '2014-01-01'
+ ORDER BY [DiscountPct];
 
  -- 4c.
  SELECT MAX ([Size]) max_size
@@ -103,5 +103,5 @@ VARP
       , MAX ([Size]) max_size
       , MIN ([Weight]) min_weight
   FROM [AdventureWorks2017].[Production].[Product]
-  WHERE [Color] IS NOT null
+ WHERE [Color] IS NOT null
  GROUP BY [ProductSubcategoryID];
