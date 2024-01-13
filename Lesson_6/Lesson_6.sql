@@ -1,11 +1,11 @@
 -- 3
  USE [AdventureWorks2017]
  GO
- CREATE PROCEDURE UpdateNationalIDNumberByBEID 
+ CREATE PROCEDURE UpdateNationalIDNumberByBEID
         @BusinessEntityID int,
 		@NationalIDNumberNew nvarchar(15)
  AS
- BEGIN TRY
+ BEGIN
  UPDATE [HumanResources].[Employee] 
     SET NationalIDNumber = @NationalIDNumberNew
   WHERE BusinessEntityID = @BusinessEntityID
